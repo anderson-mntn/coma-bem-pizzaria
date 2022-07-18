@@ -4,11 +4,14 @@ window.addEventListener('load', ()=>{
     pizzaTradUlMob.style.display = 'none'
     pizzaEspeUlMob.style.display = 'none'
     pizzaDoceUlMob.style.display = 'none'
-    pizzaCard.style.display = 'none'
-    pizzaCard2.style.display = 'none'
+    pizzaCard.style.display = 'flex'
+    pizzaCard2.style.display = 'flex'
     //--
-    pizzaCardMob.style.display = 'none'
+    pizzaCardMob.style.display = 'block'
     esfihaUlMob.style.display = 'none'
+    sorveteCardMob.style.display = 'none'
+    bebidasCardMob.style.display = 'none'
+    esfihaDeskUl.style.display = 'none'
 
 
 })

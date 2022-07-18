@@ -189,7 +189,8 @@ h1{
 }
 .pizza-preco-desk{
     font-size: 1.6vw;
-    margin: 10px auto
+    margin: 10px auto;
+    font-family: 'Quicksand', sans-serif;
 }
 .pizza-cardapio-promocionais p {
     font-size: 2vw;
@@ -290,9 +291,10 @@ h1{
 .whatsapp-icon-mob{
     display: none;
 }
-.items-mobile, .container-buttons-mob{
+.items-mobile, .container-buttons-mob, #bordasuper{
     display: none;
 }
+
 
 /* --------------------- 910px ---------------------  */
 
