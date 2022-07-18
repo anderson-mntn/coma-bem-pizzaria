@@ -153,7 +153,7 @@ h1{
 }
 #esfiha-title{
     font-size: 2.5vw;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
 }
@@ -448,7 +448,7 @@ h1{
     /* --------------------------------------------------- */
     
     #borda-recheada{
-        font-size: 5vw;
+        font-size: 5.5vw;
         font-family: 'Dancing Script', cursive;
         font-weight: 200;
     }
@@ -472,7 +472,10 @@ h1{
     .span-precos-mob{
         text-decoration: none;
         margin-top: 10px;
-        font-size: 2vw; 
+        font-size: 9vw; 
+        text-align: center;
+        font-size: 5vw;
+        
     }
     .items-mobile{
         display: block;
@@ -526,6 +529,7 @@ h1{
         margin: 0 auto;
 
     }
+    
     .doces-title-mob{
     margin-bottom: 10px;
     }
@@ -545,8 +549,45 @@ h1{
         text-align: left;
         padding-bottom: 10px;
     }
-    .span-precos-mob{
-        text-align: center;
-        font-size: 4vw;
+    .esfiha-card-mob{
+        text-align: left;
     }
+    #esfiha-title{
+        margin: 10px auto;
+        font-size: 6vw;
+        text-align: center;
+    }
+    .esfiha-items{
+        text-align: left;
+        list-style: none;
+        padding-bottom: 5px;
+    }
+    .esfiha-items li{
+        margin: 5px 10px;
+    }
+    
+    .esf-promo-img{
+    display: none;
+}
+    #sorvete-sabores{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style: none;
+}
+    #sorvete-sabores li{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 15px;
+    border-bottom: 1px solid white;
+}
+    .sorvete-card-mob{
+    margin: 10px;
+    padding-bottom: 10px;
+    border: none;
+}
+    .esfiha-items1{
+        border: none;
+}
+
 }

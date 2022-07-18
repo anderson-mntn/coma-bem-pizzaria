@@ -6,6 +6,11 @@ window.addEventListener('load', ()=>{
     pizzaDoceUlMob.style.display = 'none'
     pizzaCard.style.display = 'none'
     pizzaCard2.style.display = 'none'
+    //--
+    pizzaCardMob.style.display = 'none'
+    esfihaUlMob.style.display = 'none'
+
+
 })
 
 // Selectors Desk
@@ -41,12 +46,17 @@ esfihaButtonDesk.addEventListener('click', ()=>{
 })
 
 
-
-
 // Seletores Mobile ---------------------------------------
+
+let pizzaCardMob = document.querySelector('.pizza-card-mob')
 
 // Buttons 
 let pizzaBtnMob = document.querySelector('.pizza-button-mob')
+pizzaBtnMob.addEventListener('click', () => {
+    pizzaCardMob.style.display = 'block'
+    esfihaUlMob.style.display = 'none'
+    sorveteCardMob.style.display = 'none'
+})
 
 //Promo pizza mobile
 let pizzaPromoUlMob = document.querySelector('.pizza-promo-mob')
@@ -90,9 +100,7 @@ pizzaTradTitleMob.addEventListener("click", () =>{
     }
 })
 
-//Especial pizza
-
-
+//Especial pizza MOBILE
 let pizzaEspeTitleMob = document.querySelector('.espe-title-mob')
 let pizzaEspeUlMob = document.querySelector('.pizza-espe-mob-item')
 
@@ -112,7 +120,7 @@ pizzaEspeTitleMob.addEventListener("click", () =>{
     }
 })
 
-//Doces
+//Doces pizza mobile
 let pizzaDoceTitleMob = document.querySelector('.doces-title-mob')
 let pizzaDoceUlMob = document.querySelector('.pizza-doce-mob')
 let pizzaDoceUlDesk = document.querySelector('#pizza-doce-ul')
@@ -128,17 +136,25 @@ pizzaDoceTitleMob.addEventListener('click', () =>{
     }
 })
 
+//Esfihas mobile
+let esfihaBtnMob = document.querySelector('.esfiha-button-mob')
+let esfihaUlMob = document.querySelector('.esfiha-card-mob')
+let esfihaDeskUl = document.querySelector('.esfiha-card')
+esfihaUlMob.innerHTML = esfihaDeskUl.innerHTML
 
-// //Trad
-// pizzaTradTitleMob.addEventListener("click", () =>{
-//     if (pizzaTradUlMob.style.display === 'none'){
-//         pizzaTradUlMob.style.display = "block"
-//         border.style.width = "20%"
-        
-//     } else {
-//         border.style.width = "90%"
-//         pizzaTradUlMob.style.display = "none"
-//     }
-// })
+esfihaBtnMob.addEventListener('click', () => {
+    pizzaCardMob.style.display = 'none'
+    sorveteCardMob.style.display = 'none'
+    esfihaUlMob.style.display = 'block'
+})
 
-//Esfihas
+//Sorvete display mobile
+let sorveteCardDesk = document.querySelector('#sorvete-card')
+let sorveteCardMob = document.querySelector('.sorvete-card-mob')
+let sorveteBtnMob = document.querySelector('.sorvete-button-mob')
+sorveteCardMob.innerHTML =  sorveteCardDesk.innerHTML
+sorveteBtnMob.addEventListener('click', () =>{
+    sorveteCardMob.style.display = "block"
+    esfihaUlMob.style.display = 'none'
+    pizzaCardMob.style.display = 'none'
+})
