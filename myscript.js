@@ -31,7 +31,7 @@ let esfihaCardDesk = document.querySelector('.esfiha-card')
 
 // Functions Desk
 
-//Pizza btn
+//Pizza btn desk
 pizzaBtnDesk.addEventListener('click', () =>{
     pizzaCard.style.display = 'flex'
     pizzaCard2.style.display = 'flex'
@@ -51,11 +51,14 @@ esfihaButtonDesk.addEventListener('click', ()=>{
 let pizzaCardMob = document.querySelector('.pizza-card-mob')
 
 // Buttons 
+//pizza mob
 let pizzaBtnMob = document.querySelector('.pizza-button-mob')
 pizzaBtnMob.addEventListener('click', () => {
     pizzaCardMob.style.display = 'block'
     esfihaUlMob.style.display = 'none'
     sorveteCardMob.style.display = 'none'
+    bebidasCardMob.style.display = 'none'
+    
 })
 
 //Promo pizza mobile
@@ -146,6 +149,7 @@ esfihaBtnMob.addEventListener('click', () => {
     pizzaCardMob.style.display = 'none'
     sorveteCardMob.style.display = 'none'
     esfihaUlMob.style.display = 'block'
+    bebidasCardMob.style.display = 'none'
 })
 
 //Sorvete display mobile
@@ -155,6 +159,21 @@ let sorveteBtnMob = document.querySelector('.sorvete-button-mob')
 sorveteCardMob.innerHTML =  sorveteCardDesk.innerHTML
 sorveteBtnMob.addEventListener('click', () =>{
     sorveteCardMob.style.display = "block"
+    esfihaUlMob.style.display = 'none'
+    pizzaCardMob.style.display = 'none'
+    bebidasCardMob.style.display = 'none'
+
+})
+//Bebidas mobile
+let bebidasCardDesk = document.querySelector('#bebidas-card')
+let bebidasBtnMob = document.querySelector('.bebidas-button-mob')
+let bebidasCardMob = document.querySelector('.bebidas-card-mob')
+
+bebidasCardMob.innerHTML = bebidasCardDesk.innerHTML
+
+bebidasBtnMob.addEventListener('click', () =>{
+    bebidasCardMob.style.display = 'block'
+    sorveteCardMob.style.display = 'none'
     esfihaUlMob.style.display = 'none'
     pizzaCardMob.style.display = 'none'
 })

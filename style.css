@@ -569,19 +569,19 @@ h1{
     .esf-promo-img{
     display: none;
 }
-    #sorvete-sabores{
+    #sorvete-sabores, #bebidas-sabores{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     list-style: none;
 }
-    #sorvete-sabores li{
+    #sorvete-sabores li, #bebidas-sabores li{
     display: flex;
     justify-content: space-between;
     margin: 2px 15px;
     border-bottom: 1px solid white;
 }
-    .sorvete-card-mob{
+    .sorvete-card-mob, #bebidas-sabores{
     margin: 10px;
     padding-bottom: 10px;
     border: none;
@@ -589,5 +589,11 @@ h1{
     .esfiha-items1{
         border: none;
 }
+    #bebidas-title{
+        font-size: 6vw;
+    }
+    .bebidas-card-mob{
+        margin: 10px 0;
+    }
 
 }
