@@ -228,7 +228,7 @@ h1{
     display: block;
     width: 15%;
     border-bottom: white solid 0.5px;
-    margin: 13px auto;
+    margin: 8px auto;
 }
 
 .item-cardapio-button:hover{
@@ -468,8 +468,11 @@ h1{
     #pizza-trad-desk, #pizza-espe-desk{
         display: none;
     }
+    
     .span-precos-mob{
         text-decoration: none;
+        margin-top: 10px;
+        font-size: 2vw; 
     }
     .items-mobile{
         display: block;
@@ -496,6 +499,7 @@ h1{
     }
     .pizza-card-mob{
         height: fit-content;
+        padding-bottom: 5px;
     }
     .pizza-card-mob-item{
         margin: 5px;
@@ -512,22 +516,37 @@ h1{
     .pizza-title-mob{
         font-size: 5.5vw;
         margin: 10px auto 10px;
-        
     }
     .border-hide3{
         border-bottom: white 1px solid;
         width: 90%;
         margin: 5px auto;
     }
-    .doces-title-mob{
-    padding-bottom: 10px;
+    .border-hide4{
+        margin: 0 auto;
+
     }
-    .pizza-espe-mob li{
+    .doces-title-mob{
+    margin-bottom: 10px;
+    }
+    .pizza-espe-mob li, .pizza-doce-mob li{
         text-align: left;
         margin: 5px 10px;
         list-style: none;
     }
     .pizza-espe-mob li span{
         text-decoration: underline;
+    }
+    #border-desk, .border-promo, .border-promo2, .border-promo3{
+        display: none;
+        margin-top: 15px;
+    }
+    .pizza-doce-mob{
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    .span-precos-mob{
+        text-align: center;
+        font-size: 4vw;
     }
 }

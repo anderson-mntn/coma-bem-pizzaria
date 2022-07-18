@@ -2,6 +2,8 @@
 window.addEventListener('load', ()=>{
     pizzaPromoUlMob.style.display = 'none'
     pizzaTradUlMob.style.display = 'none'
+    pizzaEspeUlMob.style.display = 'none'
+    pizzaDoceUlMob.style.display = 'none'
     pizzaCard.style.display = 'none'
     pizzaCard2.style.display = 'none'
 })
@@ -50,17 +52,22 @@ let pizzaBtnMob = document.querySelector('.pizza-button-mob')
 let pizzaPromoUlMob = document.querySelector('.pizza-promo-mob')
 let pizzaPromoTitleMob = document.querySelector('.promo-title-mob')
 let border = document.querySelector('.border-hide3')
+let borderPromo = document.querySelector('.border-promo')
+let borderPromo2 = document.querySelector('.border-promo2')
+let borderPromo3 = document.querySelector('.border-promo3')
 
 pizzaPromoUlMob.innerHTML += pizzaPromoUl.innerHTML
 
 pizzaPromoTitleMob.addEventListener("click", () =>{
     if (pizzaPromoUlMob.style.display === 'none'){
         pizzaPromoUlMob.style.display = "block"
+        borderPromo.style.display = 'block'
         // border.style.width = "20%"
         
     } else {
         // border.style.width = "90%"
         pizzaPromoUlMob.style.display = "none"
+        borderPromo.style.display = 'none'
     }
 })
 
@@ -73,11 +80,13 @@ pizzaTradUlMob.innerHTML += pizzaTradUlDesk.innerHTML
 pizzaTradTitleMob.addEventListener("click", () =>{
     if (pizzaTradUlMob.style.display === 'none'){
         pizzaTradUlMob.style.display = "block"
+        borderPromo2.style.display = 'block'
         // border.style.width = "20%"
         
     } else {
         // border.style.width = "90%"
         pizzaTradUlMob.style.display = "none"
+        borderPromo2.style.display = 'none'
     }
 })
 
@@ -90,6 +99,34 @@ let pizzaEspeUlMob = document.querySelector('.pizza-espe-mob-item')
 let pizzaEspeUlDesk = document.querySelector('#pizza-especial-ul')
 pizzaEspeUlMob.innerHTML += pizzaEspeUlDesk.innerHTML
 
+pizzaEspeTitleMob.addEventListener("click", () =>{
+    if (pizzaEspeUlMob.style.display === 'none'){
+        pizzaEspeUlMob.style.display = "block"
+        borderPromo3.style.display = 'block'
+        // border.style.width = "20%"
+        
+    } else {
+        // border.style.width = "90%"
+        pizzaEspeUlMob.style.display = "none"
+        borderPromo3.style.display = 'none'
+    }
+})
+
+//Doces
+let pizzaDoceTitleMob = document.querySelector('.doces-title-mob')
+let pizzaDoceUlMob = document.querySelector('.pizza-doce-mob')
+let pizzaDoceUlDesk = document.querySelector('#pizza-doce-ul')
+
+pizzaDoceTitleMob.addEventListener('click', () =>{
+    if (pizzaDoceUlMob.style.display === 'none'){
+        pizzaDoceUlMob.style.display = "block"
+        
+    } else {
+        // border.style.width = "90%"
+        pizzaDoceUlMob.style.display = "none"
+       
+    }
+})
 
 
 // //Trad
@@ -104,3 +141,4 @@ pizzaEspeUlMob.innerHTML += pizzaEspeUlDesk.innerHTML
 //     }
 // })
 
+//Esfihas
