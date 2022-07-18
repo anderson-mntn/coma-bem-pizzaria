@@ -1,0 +1,514 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    border: solid white 1px;
+}
+
+body{
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    background-image: url(./imgs/f55.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    text-align: center;
+}
+.items, header, #container-serv, #local {
+    background-color: rgba(59, 52, 52, 0.55);
+    margin: 5px 1.5% 8px;
+}
+ #logotipo{
+    width: 22%;
+    height: 100%;
+    margin-right: 1%;
+ }
+#logotipo img{
+ width: 100%;
+}
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 6vw;
+}
+#horarios{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.1vw;
+    justify-content: end;
+    margin-right: -5px;
+    text-shadow: 1px 2px 2px black;
+    width: 30%;
+}
+#horarios p {
+    margin: 5px;
+}
+#horarios span{
+    font-size: 2vh;
+}
+#dias{
+    font-size: 1.8vw;
+    margin-top: 10px;
+    padding-right: 5px ;
+}
+
+#telefone{
+    font-size: 1.8vw;
+}
+#telefones, #tel-numbers{
+    padding: 5px 6px;  
+}
+#telefones{
+    font-size: 1.8vw;
+    border-top: 1px solid black;
+    margin-top: 10px;
+}
+
+#container-serv{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    margin: 10px 1.5% 0;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2.6vw;
+}
+.item-cardapio-button{
+    margin: 10px auto;
+    width: 100%;
+    border: none;
+        text-align: center;
+        padding: 5px;
+        text-shadow: 1px 2px 2px black;
+        border-left: white 1px solid;
+    }
+#pizza-button{
+    border: none;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 1.5% 5px;
+    border-radius: 5px;
+    
+}
+#fbicon{
+    margin-left: 120px;
+}
+#socials {
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    border-top: black 1px; 
+    text-align: center;
+}
+#socials img{
+    width: 10%;
+    margin-left: 5px;
+}
+#socials p{
+    margin-right: 5px;
+}
+.item-cardapio-button, #socials{
+    font-size: 1.8vw;
+}
+
+.pizza-promo-ul li, #pizza-trad-ul li, #pizza-especial-ul li, #pizza-doce-ul li, .esfiha-card li{
+    text-align: left;
+    margin: 10px auto;
+    font-size: 1.5vw;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+}
+.pizza-promo-ul li, #pizza-trad-ul li{
+   margin: 10px 30px;
+}
+#pizza-especial-ul li, #pizza-doce-ul li{
+    margin-left: 7%;
+}
+.pizza-promo-ul li span, #pizza-trad-ul li span, #pizza-especial-ul li span, #pizza-doce-ul li span{
+    text-decoration: underline;
+}
+#pizza-trad-ul, .pizza-promo-ul, #pizza-especial-ul{
+    height: fit-content;
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+}
+.pizza-promo-ul{
+    padding-top: 10px;
+}
+#pizza-card, #pizza-card2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+#esfiha-title{
+    font-size: 2.5vw;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+#pizza-especial-ul, #pizza-doce-ul{
+    border-left: white 1px solid;
+}
+.border-desk{
+    border-top: 0.5px white solid;
+    margin: 15px auto 0;
+    width: 80%;
+}
+#pizza-doce-ul{
+    width: 100%;
+    height: 50%;
+    order: 3;
+    margin: 12px auto 10px;
+    text-align: center;
+} 
+#pizza-doce-ul .border-desk{
+    margin-top: 20px;
+}
+.pizza-cardapio-promocionais, #pizza-doce-desk{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.4vw;
+    margin:  0;
+
+}
+#pizzaPromDesktop{
+    margin: 30px;
+}
+.pizza-preco{
+    display: none;
+}
+.pizza-preco-desk{
+    font-size: 1.6vw;
+    margin: 10px auto
+}
+.pizza-cardapio-promocionais p {
+    font-size: 2vw;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 200;
+}
+.esfiha-card{
+    width: 100%;
+    margin: 15px;
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+
+}
+
+.esfiha-items{
+    text-align: center;
+}
+.esfiha-items1{
+    border-right: 1px white solid;
+    width: 100%;
+}
+.esfiha-items li{
+    margin: 15px;
+}
+
+.esf-promo-img {
+    margin: 15px auto 0;
+    width: 50%;
+}
+.esf-promo-img img{
+    border-radius: 15px;
+    width: 100%;
+    height: 10%;
+}
+.border-hide2{
+    display: block;
+    width: 15%;
+    border-bottom: white solid 0.5px;
+    margin: 13px auto;
+}
+
+.item-cardapio-button:hover{
+    cursor: pointer;
+}
+#container-buttons-mob, .border-hide, #socials-hide, #numbers-hide, #expand-arrow, #pizzaProm,#card-span, #pizza-trad-title, #pizza-especial-title, #pizza-doce-title{
+    display: none;
+}
+/* .esfiha-card,*/ #sorvete-card, #bebidas-card{ 
+    display: none;
+}
+
+#pizza-doce-desk{
+    font-size: 2.5vw;
+}
+#local{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    height: fit-content;
+    font-size: 2.4vw;
+    padding: 10px 0;
+    margin-bottom: 5px ;
+}
+#map{
+    width: 85%;
+    height: fit-content;
+    margin: 20px auto 5px;
+}
+#local span{
+    font-size: 3vw;
+    padding: 5px;
+}
+#map iframe{
+    width: 70%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+#promo-img img{
+    width: 67%;
+    border-radius: 5px;
+}
+#promo-img{
+    margin: 20px 10% 10px;
+}
+.item-cardapio-button:hover{
+    cursor: pointer;
+}
+.whatsapp-icon-desk{
+    width: 4%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+.whatsapp-icon-desk img{
+    width: 100%;
+}
+.whatsapp-icon-mob{
+    display: none;
+}
+.items-mobile, .container-buttons-mob{
+    display: none;
+}
+
+/* --------------------- 910px ---------------------  */
+
+@media only screen and (max-width: 910px){
+    .pizza-promo-ul li, #pizza-trad-ul li, #pizza-especial-ul li, #pizza-doce-ul li{
+    font-size: 2vw;
+}
+    .item-cardapio-button{
+        font-size:2.5vw;
+    } 
+}
+
+/* --------------------- MEDIA QUERY ---------------------  */
+
+@media only screen and (max-width: 650px) { 
+    /* *{
+        border: red 1px solid;
+    } */
+    #container-serv{
+        display: none;
+    }
+    #container-buttons-mob{
+        display: flex;
+    }
+    body{
+        font-family: 'Quicksand', sans-serif;
+        background-size: cover;
+        background-position: left 35% bottom 15%;
+    }
+    #logotipo{
+        width:60%;
+        margin: 0 auto;
+        padding-top: 10px;
+        min-width: 120px;
+    }
+    h1{
+        margin: 0 auto;
+        font-size: 13vw;
+    }
+    #horarios{
+        width: 100%;
+        font-size: 6.8vw;
+        padding-top: 5px;
+
+    } 
+    #dias{
+        font-size:6.6vw;
+        margin: 5px auto;
+    }
+    header{
+        display: block;
+        margin: 3px 4px;
+    }  
+   
+    #contatos{
+        font-size: 6vw;
+        padding: 10px;
+    }
+   
+    #ondeEst{
+        display: none ;
+    }
+    #bebidas{
+        line-height: 42px;
+        height: 50px;
+        padding-left: 10px;
+    }
+    #socials{
+        display: none;
+    }
+    #socials-hide{
+        display: flex;
+        align-items: baseline;
+        width:20%;
+        height: auto;
+        margin: 5px auto 10px;
+        min-width: 60px;
+    }
+    #socials-hide img{
+        min-width: 15px;
+    }
+    #numbers-hide{
+        font-size:7vw;
+        padding: 6px 0px 13px ;
+        display: block;
+        width: 100%;
+    }
+    .items{
+       display: none;
+    }
+    
+    #local{
+        height: auto;
+        margin: 4px;
+        padding-top: 10px;
+        font-size: 7vw;
+        text-align: center;
+        border-radius: 5px;
+        background-color: rgba(59, 52, 52, 0.55);
+    }
+    #horarios p {
+        margin: 0;
+    }
+    
+    #map iframe{
+        width: 99%;
+        height: 80%;
+    }
+    #map{
+        margin: 10px auto 0;
+        width: 100%;
+    }
+  
+    #local span{
+        font-size: 7vw;
+        margin: 40px auto;
+    }
+    #pizza-especial-ul{
+        padding-top: 5px;
+    }
+    #local{
+        padding-bottom: 10px;
+    }
+    #local p{
+        font-size: 5vw;
+    }
+    #promo-img{
+        margin: 20px 10% 0;
+    }
+    .whatsapp-icon-desk {
+        display: none;
+    }
+    .whatsapp-icon-mob{
+        display: block;
+        position: fixed;
+        top: 2%;
+        right: 3%;
+        width: 35px;
+        height: 35px;
+    }
+    .whatsapp-icon-mob img{
+        width: 100%;
+        height: 100%;
+    }
+    .onde-estamos{
+        display: none;
+    }
+    #pizzaPromDesktop, .pizza-preco-desk{
+        display: none;
+    }
+    /* --------------------------------------------------- */
+    
+    #borda-recheada{
+        font-size: 5vw;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 200;
+    }
+    .border-mob{
+        margin: auto;
+        width: 86%;
+        border-bottom: white 1px solid;
+    }
+    #expand-arrow{
+        display: inline;
+        float: right;
+        width: 7%;
+        height: 100%;
+        transform: translateX(-80%) translateY(5%);
+
+    }
+    .span-precos-mob{
+        text-decoration: none;
+    }
+    .items-mobile{
+        display: block;
+        background-color: rgba(58, 55, 55, 0.637);
+        text-align: center;
+        margin: 5px;
+        border-radius: 5px;
+        padding-top: 1px;
+    }
+    .container-buttons-mob{
+        display: grid;
+        grid-template: auto auto / 1fr 1fr;
+        height: fit fit-content;
+        margin: 5px;
+        gap: 5px;
+    }
+    .item-cardapio-button-mob{
+        background-color: rgba(58, 55, 55, 0.637);
+        border-radius: 5px;
+        text-align: center;
+        justify-content: baseline;
+        padding:3% 5%;
+        font-size: 4.5vw;
+    }
+    .pizza-card-mob{
+        height: fit-content;
+        border: white 2px solid;
+    }
+    .pizza-card-mob-item{
+        margin: 5px;
+        text-align: center;
+        list-style: none;
+    }
+    .pizza-card-mob-item span{
+        text-decoration: underline;
+    }
+    .pizza-card-mob-item li{
+        text-align: left;
+        margin: 5px;
+    }
+    .pizza-title-mob{
+        font-size: 5.5vw;
+        margin: 10px;
+        border: white 2px solid; 
+    }
+}
