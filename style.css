@@ -149,10 +149,10 @@ h1{
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
+    margin: 20px auto 10px;
 }
 #esfiha-title{
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     margin: 20px auto;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
@@ -181,9 +181,7 @@ h1{
     margin:  0;
 
 }
-#pizzaPromDesktop{
-    margin: 30px;
-}
+
 .pizza-preco{
     display: none;
 }
@@ -199,7 +197,7 @@ h1{
 }
 .esfiha-card{
     width: 100%;
-    margin: 15px;
+    margin: 10px;
     display: grid;
     grid-template: auto / 1fr 1fr;
 
@@ -229,7 +227,7 @@ h1{
     display: block;
     width: 15%;
     border-bottom: white solid 0.5px;
-    margin: 8px auto;
+    margin: 18px auto;
 }
 
 .item-cardapio-button:hover{

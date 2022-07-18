@@ -180,3 +180,11 @@ bebidasBtnMob.addEventListener('click', () =>{
     esfihaUlMob.style.display = 'none'
     pizzaCardMob.style.display = 'none'
 })
+
+let ondeestamosBtn = document.querySelector('#ondeEst')
+var selector = document.getElementById('local');
+ondeestamosBtn.addEventListener('click', () => {
+    if(typeof selector.scrollIntoView !== 'undefined' ){
+       selector.scrollIntoView(); 
+    }
+})
