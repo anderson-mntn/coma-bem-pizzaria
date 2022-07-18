@@ -446,7 +446,9 @@ h1{
         display: none;
     }
     /* --------------------------------------------------- */
-    
+    #bordaespe{
+        display: none;
+    }
     #borda-recheada{
         font-size: 5.5vw;
         font-family: 'Dancing Script', cursive;
@@ -517,7 +519,7 @@ h1{
         margin: 5px;
     }
     .pizza-title-mob{
-        font-size: 5.5vw;
+        font-size: 6vw;
         margin: 10px auto 10px;
     }
     .border-hide3{
