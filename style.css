@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: 1px solid white; */
 }
 
 body{
@@ -350,7 +351,9 @@ h1{
         font-size: 6vw;
         padding: 10px;
     }
-   
+    .border-hide{
+        display: none;
+    }
     #ondeEst{
         display: none ;
     }
@@ -462,6 +465,9 @@ h1{
         transform: translateX(-80%) translateY(5%);
 
     }
+    #pizza-trad-desk, #pizza-espe-desk{
+        display: none;
+    }
     .span-precos-mob{
         text-decoration: none;
     }
@@ -490,7 +496,6 @@ h1{
     }
     .pizza-card-mob{
         height: fit-content;
-        border: white 2px solid;
     }
     .pizza-card-mob-item{
         margin: 5px;
@@ -506,7 +511,23 @@ h1{
     }
     .pizza-title-mob{
         font-size: 5.5vw;
-        margin: 10px;
-        border: white 2px solid; 
+        margin: 10px auto 10px;
+        
+    }
+    .border-hide3{
+        border-bottom: white 1px solid;
+        width: 90%;
+        margin: 5px auto;
+    }
+    .doces-title-mob{
+    padding-bottom: 10px;
+    }
+    .pizza-espe-mob li{
+        text-align: left;
+        margin: 5px 10px;
+        list-style: none;
+    }
+    .pizza-espe-mob li span{
+        text-decoration: underline;
     }
 }

@@ -29,7 +29,6 @@
         </div>
         <div class="border-hide"></div>
         <div id="horarios">
-            <p>Aberto Todos os dias!</p>
             <div id="dias"> 
              Segunda a Quinta 18h às 23h <br>
              Sex, Sab e Dom 18h às 23:30h
@@ -91,6 +90,8 @@
                 <div class="border-hide"></div>
                 <div class="border-desk"></div>
                 <span id="pizza-trad-title">Pizzas Tradicionais <img src="./imgs/expand-arrow.png"id="expand-arrow"></span>
+               
+               
                 <ul class="pizza-cardapio-promocionais" id="pizza-trad-ul">
                     <span id="pizza-trad-desk">Pizzas Tradicionais</span>
 
@@ -104,7 +105,7 @@
                     
                     <div class="border-hide2"></div>
 
-                    <p>Borda Recheada R$ 4,50<br>Cheddar ou Catupiry</p>
+                    <p id="borda-recheada">Borda Recheada R$ 4,50<br>Cheddar ou Catupiry</p>
                     <div class="border-hide2"></div>
                     <li>10. <span>Alemã</span> - Catupiry, Bacon e Parmesão </li>
                     <li>11. <span>Americana</span> - Presunto, Mussarela, Bacon e Ovos </li>
@@ -144,7 +145,7 @@
                     </div>
                     
                     <div class="border-hide2"></div>
-                    <p>Borda Recheada R$ 4,50<br>Cheddar ou Catupiry</p>
+                    <p id="borda-recheada">Borda Recheada R$ 4,50<br>Cheddar ou Catupiry</p>
                     <div class="border-hide2"></div>
                     <li>33. <span>Caipira</span> - Frango, Milho, Mussarela e Bacon</li>
                     <li>34. <span>Canadense</span> - Lombo, Bacon e Mussarela  </li>
@@ -281,20 +282,32 @@
     </div>
     <div class="items-mobile">
         <div class="pizza-card-mob">
-
             <p class="pizza-title-mob promo-title-mob"> Pizzas Promocionais <img src="./imgs/expand-arrow.png" id="expand-arrow"> </p> 
+            <div class="border-hide3"></div>
+
             <div class="pizza-promo-mob pizza-card-mob-item">
-                <div class="border-mob"></div>
-                <p class="span-precos-mob">Broto R$18,00 | Média R$ 21,00 | Grande R$ 26,00 </p> 
+                <p class="span-precos-mob">Broto R$18,00 | Média R$ 21,00 <br> Grande R$ 26,00 </p> 
+                <!-- aqui vem += innerhtml -->
             </div>
 
             <p class="pizza-title-mob trad-title-mob"> Pizzas Tradicionais <img src="./imgs/expand-arrow.png" id="expand-arrow"> </p>
-            <div class="pizza-trad-mob"></div>
+            <div class="border-hide3"></div>
 
-            <p class="pizza-title-mob espec-title-mob"> Pizzas Especiais <img src="./imgs/expand-arrow.png" id="expand-arrow"> </p>
-            <div class="pizza-espe-mob"></div>
+            <div class="pizza-trad-mob pizza-card-mob-item">
+                <p class="span-precos-mob">Broto R$22,00 | Média 25,00 <br> Grande R$ 29,50 </p> 
+            </div>
+
+               
+            
 
 
+            <p class="pizza-title-mob espe-title-mob"> Pizzas Especiais <img src="./imgs/expand-arrow.png" id="expand-arrow"> </p>
+             <div class="border-hide3"></div>
+             <div class="pizza-espe-mob pizza-espe-mob-item" >
+                <p class="span-precos-mob">Broto R$26,00 | Média R$ 29,90 <br> Grande R$ 32,50 </p>
+             </div>
+
+             <div class="border-hide3"></div>
             <p class="pizza-title-mob doces-title-mob"> Pizzas Doces <img src="./imgs/expand-arrow.png" id="expand-arrow"> </p>
             <div class="pizza-doce-mob"></div>
         </div>
