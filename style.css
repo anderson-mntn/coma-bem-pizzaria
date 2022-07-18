@@ -229,7 +229,11 @@ h1{
     border-bottom: white solid 0.5px;
     margin: 18px auto;
 }
-
+.border-tel{
+    width: 90%;
+    margin: 10px auto;
+    border-bottom: white 1px solid;
+}
 .item-cardapio-button:hover{
     cursor: pointer;
 }
@@ -597,5 +601,7 @@ h1{
     .bebidas-card-mob{
         margin: 10px 0;
     }
-
+    .border-hide2{
+        margin: 8px auto;
+    }
 }
